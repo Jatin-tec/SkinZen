@@ -1,5 +1,6 @@
 # Skin Zen: Personalized Acne Severity Detection and Recommendation Web-Based Product
 > View the presentation [here](https://docs.google.com/presentation/d/e/2PACX-1vSOqM6THSd07KN4pXpUqAE-sXdpcptFRAU8lfnVpc5hqLWKuZlyKJgGMWbWI7rVB4tru6Tpk8XqMRAc/pub?start=true&loop=false&delayms=3000&slide=id.gb2f3ecf918_2_384)
+
 > View Demo [here](https://huggingface.co/spaces/jatin-tech/SkinZen)
 ## Summary:
 Developed a web-based product, Skin Zen, that accurately detects and classifies the severity of acne using the ResNet-101 architecture. The model was pre-trained with weights from the ImageNet dataset. The project incorporated additional models like eye-cascade and face-landmarks to extract skin patches from training images, enhancing the classification process.
