@@ -10,7 +10,6 @@ import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def sentence_builder(age, sex, skin_type, allergies, diet, file):
-    print(age, sex, skin_type, allergies, diet)
     
     img_byte_arr = BytesIO()
     file.save(img_byte_arr, format='JPEG')
@@ -22,7 +21,6 @@ def sentence_builder(age, sex, skin_type, allergies, diet, file):
 
     
     predictions = data['prediction']
-    print(data)
     prediction = np.array(predictions)
 
 
@@ -47,7 +45,6 @@ def sentence_builder(age, sex, skin_type, allergies, diet, file):
 
     response = requests.post('http://127.0.0.1:5000/recommendation', json=data)
     data = response.json()
-
 
     content = data['choices'][0]['message']['content']
     return content, output1, output2, output3, output4
